@@ -1,0 +1,32 @@
+print('-----------------Task1--------------------------')
+name = "Hello World"
+print(name)
+
+print('-----------------Task2--------------------------')
+num1 = int (input ("Enter first num:"))
+num2 =  int (input ("Enter second num:"))
+num = 0
+num3 = num1 * num2
+num4 = num1 - num2
+num5 = num1 + num2
+num6 = num1 / num2 + num2
+if num == 0:
+    z = 0
+else:
+    z = num1 / num
+print('Resalt:' , num3)
+print('Resalt:' , num4)
+print('Resalt:' , num5)
+print('Resalt:' , num6)
+print ('На нуль ділити не можна')
+
+print ('--------------------Task3----------------------')
+s = input ('Enter a word : ')
+print (s[::-1])
+
+print('-----------------Task4--------------------------')
+g = input ('Enter a word :')
+f = ''
+for letter in g:
+    f += letter * 2
+print(f)
