@@ -1,0 +1,13 @@
+#    Задачі з Python Starter
+print('-----------Task1-----------')
+c = input("Введіть слово:")
+d = input("Введіть слово:")
+print('Ви ввели:"', c ,',', d, '"', sep='')
+print('-----------Task2-----------')
+a = int(input("Введіть a:"))
+b = int(input("Введіть b:"))
+x = int(input("Введіть x:"))
+if a<x<b:
+    print(True)
+else:
+    print(False)
