@@ -1,0 +1,44 @@
+a_or_b = input("a or b:")
+
+def a(a):
+    w = a.split()
+    for i in w:
+        if len(i) < 3:
+            w.pop(w.index(i))
+        i.strip()
+        print(i)
+    key = str.lower
+    print(w)
+
+
+def b(a):
+    print('a:', a.count('a'))
+    print('b:', a.count('b'))
+    print('c:', a.count('c'))
+    print('d:', a.count('d'))
+    print('e:', a.count('e'))
+    print('f:', a.count('f'))
+    print('g:', a.count('g'))
+    print('h:', a.count('h'))
+    print('i:', a.count('i'))
+    print('k:', a.count('k'))
+    print('l:', a.count('l'))
+    print('m:', a.count('m'))
+    print('n:', a.count('n'))
+    print('o:', a.count('o'))
+    print('p:', a.count('p'))
+    print('q:', a.count('q'))
+    print('r:', a.count('r'))
+    print('s:', a.count('s'))
+    print('t:', a.count('t'))
+    print('u:', a.count('u'))
+    print('v:', a.count('v'))
+    print('w:', a.count('w'))
+    print('x:', a.count('x'))
+    print('y:', a.count('y'))
+    print('z:', a.count('z'))
+
+if a_or_b == "a":
+    a(input("Enter text:"))
+elif a_or_b == "b":
+    b(input("Enter text:"))
