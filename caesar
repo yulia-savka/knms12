@@ -1,0 +1,33 @@
+b = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1",
+     "2", "3", "4", "5", "6", "7", "8", "9"]
+
+
+def caesar(a):
+    d = ""
+    a = a.upper()
+    for i in range(len(a)):
+        if a[i] == "X":
+            d = d + a[i].replace(a[i], "A")
+        elif a[i] == "Y":
+            d = d + a[i].replace(a[i], "B")
+        elif a[i] == "Z":
+            d = d + a[i].replace(a[i], "C")
+        elif a[i] == " ":
+            d = d + a[i].replace(a[i], " ")
+        elif not a[i].isalnum():
+            d = d + a[i]
+        else:
+            if a[i] == "7":
+                d = d + "0"
+            elif a[i] == "8":
+                d = d + "1"
+            elif a[i] == "9":
+                d = d + "2"
+            elif a[i].isnumeric():
+                d = d + b[b.index(a[i])+1]
+            else:
+                d = d + a[i].replace(a[i], b[b.index(a[i])+1])
+    print(d)
+
+
+caesar(input())
