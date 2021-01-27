@@ -1,0 +1,7 @@
+num = int(input ("Enter num:"))
+print('Шістнадцяткова система числення:', (hex(num)))
+print( 'Двійкова система числення:' ,(bin(num)))
+b=int(input ("Enter num:"), 16)
+print(b)
+b=int(input ("Enter num:"), 2)
+print(b)
