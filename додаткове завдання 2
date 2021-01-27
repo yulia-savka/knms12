@@ -1,0 +1,20 @@
+a=int(input("Enter num:"))
+f=int(input("Enter num:"))
+c=[]
+l=[]
+while a!=0:
+       b=a%2
+       c.append(b)
+       a=a//2
+
+c=c[::-1]
+
+while f!=0:
+       k = f%16
+       l.append(k)
+       f=f//16
+
+l=l[::-1]
+
+print('Двійкова система числення:', *c, sep='')
+print('Шістнадцяткова система числення:', *l, sep='')
